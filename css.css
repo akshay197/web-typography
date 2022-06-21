@@ -1,0 +1,280 @@
+body {
+  background-color: black;
+  display: flex;
+  overflow: hidden;
+}
+
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+
+#closed-captions p {
+  opacity: 0;
+  transition: 0.05s;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#closed-captions .on {
+  opacity: 1;
+}
+
+#closed-captions .off {
+  transition: 0.2s;
+  opacity: 0;
+}
+
+iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+body.sound2 {
+  background-color: #000000;
+  animation: fadeIt 2s;
+}
+
+@keyframes fadeIt {
+  0% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #1a2aba;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+
+.backgroundKeeper {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+
+body.sound4 .backgroundKeeper {
+  background-color: #000000;
+  animation: redAlert 2s forwards;
+}
+
+@keyframes redAlert {
+  0% {
+    opacity: 0;
+    background-image: url("/images/Redalert.gif");
+  }
+  50% {
+    opacity: 1;
+    background-image: url("/images/Redalert.gif");
+  }
+  100% {
+    opacity: 0;
+    background-image: none;
+  }
+}
+
+body.sound6 .backgroundKeeper {
+  background-color: #000000;
+  animation: redAlert2 2s forwards;
+}
+
+@keyframes redAlert2 {
+  0% {
+    opacity: 0;
+    background-image: url("/images/Redalert.gif");
+  }
+  50% {
+    opacity: 1;
+    background-image: url("/images/Redalert.gif");
+  }
+  100% {
+    opacity: 0;
+    background-image: none;
+  }
+}
+
+body.sound8 .backgroundKeeper {
+  background-color: #000000;
+  animation: redAlert3 2s forwards;
+}
+
+@keyframes redAlert3 {
+  0% {
+    opacity: 0;
+    background-image: url("/images/Redalert.gif");
+  }
+  50% {
+    opacity: 1;
+    background-image: url("/images/Redalert.gif");
+  }
+  100% {
+    opacity: 0;
+    background-image: none;
+  }
+}
+
+/* Neon effect: https://css-tricks.com/how-to-create-neon-text-with-css/ */
+/* The Intercom voice 1*/
+.voice1 {
+  color: #fff;
+  font-family: "Brenner Mono Regular";
+  font-size: 1.5em;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+/* The Actor */
+.voice2 {
+  font-family: "Brenner Sans Light";
+  font-size: 1.5em;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff,
+    0 0 80px #fff;
+  margin-top: 2em;
+  text-align: center;
+  color: white;
+}
+
+/* CSS color from https://www.w3.org/wiki/CSS/Properties/color/keywords */
+
+/* The F-word */
+.voice3 {
+  font-family: "Brenner Medium Italic";
+  font-size: 3em;
+  color: crimson;
+  text-shadow: 2px 2px 4px #000;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px crimson, 0 0 10px crimson, 0 0 20px crimson, 0 0 40px crimson;
+
+}
+
+/* The Intercom voice 2 */
+.voice4 {
+  color: #fff;
+  font-family: "Brenner Mono Regular";
+  font-size: 1.5em;
+  text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0f5;
+}
+
+/* shake effect from https://codemyui.com/pure-css-text-shake-animation */
+.shakey {
+  animation: 0.1s shaketext infinite alternate;
+}
+
+@keyframes shaketext {
+  0% {
+    transform: skewX(-8deg);
+  }
+  5% {
+    transform: skewX(8deg);
+  }
+  10% {
+    transform: skewX(-8deg);
+  }
+  15% {
+    transform: skewX(8deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+p0 span {
+  opacity: 0;
+}
+
+.p0.on span:nth-of-type(11) {
+  opacity: 1;
+  transition: 0s 0.3s;
+}
+
+.p1.on span:nth-of-type(2) {
+  opacity: 1;
+  transition: 0s 0.3s;
+}
+
+.p2.on span:nth-of-type(3) {
+  animation: shaketext 0.025s infinite linear;
+  display: inline-block;
+  text-decoration: underline;
+  font-family: "Brenner Sans Italic";
+}
+
+.p3.on span:nth-of-type(6) {
+  opacity: 1;
+  transition: 0s 0.3s;
+  font-family: "Brenner Sans Italic";
+}
+
+.p4.on span:nth-of-type(5) {
+  opacity: 1;
+  transition: 0s 0.3s;
+  background: #252525;
+}
+
+.p4.on span:nth-of-type(6) {
+  opacity: 1;
+  transition: 0s 0.3s;
+  background: #252525;
+}
+
+.p4.on span:nth-of-type(7) {
+  opacity: 1;
+  transition: 0s 0.3s;
+  background: #252525;
+}
+
+.p5.on span {
+  opacity: 1;
+  transition: 0s 0.3s;
+  background: #252525;
+}
+
+.p7.on span:nth-of-type(6) {
+  opacity: 1;
+  transition: 0s 0.3s;
+  font-size: 1.5em;
+  color: dimgrey;
+  text-shadow: none;
+}
+
+.p7.on span:nth-of-type(8) {
+  opacity: 1;
+  font-size: 1.5em;
+}
+
+.p21.on span:nth-of-type(11) {
+  opacity: 1;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: deeppink;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+}
+
+body.sound12 {
+  background-color: #202020;
+}
+
+.p54.on span:nth-of-type(12) {
+  opacity: 1;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: deeppink;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* https://unicode.org/emoji/charts/full-emoji-list.html */
