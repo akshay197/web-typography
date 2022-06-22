@@ -28,10 +28,12 @@ Deze stem lijkt op voice 1 maar dan net iets helderder en hoger. De vragen worde
 ## Visuals
 De ondertiteling heb ik een neon effect gegeven omdat ik het wel interessant vond voor de verandering. De gloed geeft een mysterieuze uitstraling maar gaat niet ten koste van de leesbaarheid. Met de donkere achtergrond valt het goed samen uiteraard. 
 
+De fragment is netjes gecentreerd zodat het kijken aangenaam blijft voor het publiek.
+
 Baseline heb ik laten onderstrepen, het is een woordgrap die ik in de ondertiteling verwerkt wou hebben. Dan is het te hopen dat de lezer het wel opmerkt natuurlijk..
 
 ### Emoji's
-*Een foto zegt meer dan 1000 woorden*, dit heb ik heel serieus genomen want ik heb emoji's in de tekst verwerkt. Dit omdat het voor de lezer sneller en makkelijker te zien is aan de icons om welk woord het gaat. Dit heeft een spannend effect waardoor het erg afwijkt van de standaard en toch heel bekend oogt voor de mensenin in deze moderne tijd die een smartphone gebruiken.
+*"Een foto zegt meer dan 1000 woorden"*, dit heb ik heel serieus genomen want ik heb emoji's in de tekst verwerkt. Dit omdat het voor de lezer sneller en makkelijker te zien is aan de icons om welk woord het gaat. Dit spannende en visuele effect wijkt van de standaard af en oogt toch bekend voor de mensen  in deze moderne tijd die een smartphone gebruiken.
 
 ### Background Color
 De blauwe politie sirenes heb ik opgegeven als blauwe achtergrond kleur zodat het effect versterkt wordt als je het filmpje bekijkt. De bedoeling is dat de beleving echter wordt.
@@ -41,6 +43,9 @@ De red alerts heb ik lettterlijk terug laten komen op de achtergrond. Het woord 
 
 ### Bronnen
 https://css-tricks.com/how-to-create-neon-text-with-css
+
 https://www.w3.org/wiki/CSS/Properties/color/keywords
+
 https://codemyui.com/pure-css-text-shake-animation
+
 https://unicode.org/emoji/charts/full-emoji-list.html

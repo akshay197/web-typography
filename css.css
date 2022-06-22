@@ -256,4 +256,11 @@ body.sound12 {
   font-weight: bold;
 }
 
+.p79.on span:nth-of-type(6) {
+  animation: shaketext 0.025s infinite linear;
+  display: inline-block;
+  text-decoration: underline;
+  font-family: "Brenner Sans Italic";
+}
+
 /* https://unicode.org/emoji/charts/full-emoji-list.html */
